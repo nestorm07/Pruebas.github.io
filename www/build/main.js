@@ -58,7 +58,7 @@ var HomePage = (function () {
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"E:\Ionic\ControldeGastos1.1\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <netstore-calendario></netstore-calendario>\n</ion-content>\n'/*ion-inline-end:"E:\Ionic\ControldeGastos1.1\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\nestor.castañeda\Downloads\ControldeGastos1.1\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <netstore-calendario></netstore-calendario>\n</ion-content>\n'/*ion-inline-end:"C:\Users\nestor.castañeda\Downloads\ControldeGastos1.1\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], HomePage);
@@ -114,7 +114,7 @@ var ListPage = (function () {
     };
     ListPage = ListPage_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list',template:/*ion-inline-start:"E:\Ionic\ControldeGastos1.1\src\pages\list\list.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-start></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-end>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"E:\Ionic\ControldeGastos1.1\src\pages\list\list.html"*/
+            selector: 'page-list',template:/*ion-inline-start:"C:\Users\nestor.castañeda\Downloads\ControldeGastos1.1\src\pages\list\list.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-start></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-end>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\nestor.castañeda\Downloads\ControldeGastos1.1\src\pages\list\list.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], ListPage);
@@ -264,7 +264,7 @@ var MyApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"E:\Ionic\ControldeGastos1.1\src\app\app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"E:\Ionic\ControldeGastos1.1\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\nestor.castañeda\Downloads\ControldeGastos1.1\src\app\app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"C:\Users\nestor.castañeda\Downloads\ControldeGastos1.1\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -312,7 +312,6 @@ var NetstoreCalendarioComponent = (function () {
         // this is the current date
         this.cal_fecha_actual = new Date();
         this.cal_ArrayDeDias = new Array(7);
-        this.cal_ArrayDeDiasConDAtos = new Array(7);
         this.MesAnterior = function () {
             //Set the month back by one
             this.mes = (this.mes != 0) ? this.mes - 1 : 11;
@@ -339,49 +338,56 @@ var NetstoreCalendarioComponent = (function () {
     //Generates the needed HTML for the calendar
     NetstoreCalendarioComponent.prototype.generarHTML = function () {
         // get first dias of month
-        var firstDay = new Date(this.año, this.mes, 1);
-        var startingDay = firstDay.getDay();
+        var primerDiaDelMes = new Date(this.año, this.mes, 1);
+        var PrimerDiaDelMesEnlaSemana = primerDiaDelMes.getDay();
         // find number of diass in month
-        var monthLength = this.cal_dias_del_mes[this.mes];
-        // Compensate for leap year
-        if (this.mes == 1) {
-            if ((this.año % 4 == 0 && this.año % 100 != 0) || this.año % 400 == 0) {
-                monthLength = 29;
-            }
-        }
+        var cantidadDeDiasDelMes = this.obtenerCantidadDiasDelMes(this.mes);
         // Fill in month and year for header
-        var monthName = this.cal_etiqueta_meses[this.mes];
-        document.getElementsByClassName("headerCalendrio")[0].innerHTML = monthName + "&nbsp;" + this.año;
-        // fill in the diass
-        var html = '';
+        var nombreDelMes = this.cal_etiqueta_meses[this.mes];
+        document.getElementsByClassName("headerCalendrio")[0].innerHTML = nombreDelMes + "&nbsp;" + this.año;
         var dia = 1;
         this.cal_ArrayDeDias = [];
-        this.cal_ArrayDeDiasConDAtos = [];
         for (var j = 0; j < 9; j++) {
             console.log(j);
             this.cal_ArrayDeDias[j] = new Array(7);
-            this.cal_ArrayDeDiasConDAtos[j] = new Array(7);
             // this loop is for weekdiass (cells)
             for (var k = 0; k <= 6; k++) {
-                html += '<td class="dias">';
-                if (dia <= monthLength && (j > 0 || k >= startingDay)) {
-                    var datosdia = new __WEBPACK_IMPORTED_MODULE_1__Clases_ClasesDto__["a" /* DiaDto */](dia, new Date(this.año, this.mes, dia), this.año + '/' + this.mes + '/' + dia, this.año + this.mes + dia);
+                if (dia <= cantidadDeDiasDelMes && (j > 0 || k >= PrimerDiaDelMesEnlaSemana)) {
+                    var datosdia = new __WEBPACK_IMPORTED_MODULE_1__Clases_ClasesDto__["a" /* DiaDto */]();
+                    var FechaEnstring = new String(this.año);
+                    var MesEnString = this.mes.toString();
+                    var DiaEnString = dia.toString();
+                    if (this.mes < 10) {
+                        MesEnString = '0' + MesEnString;
+                    }
+                    ;
+                    if (dia < 10) {
+                        DiaEnString = '0' + DiaEnString;
+                    }
+                    ;
                     datosdia.DiaCorto = dia;
                     datosdia.FechaCompleta = new Date(this.año, this.mes, dia);
                     datosdia.FechaCorta = this.año + '/' + this.mes + '/' + dia;
-                    var str1 = new String(this.año);
-                    datosdia.FechaNumerica = Number(str1.concat(this.mes.toString(), dia.toString()));
+                    datosdia.FechaNumerica = Number(FechaEnstring.concat(MesEnString, DiaEnString));
                     this.cal_ArrayDeDias[j][k] = datosdia;
-                    this.cal_ArrayDeDiasConDAtos[j][k] = datosdia;
                     dia++;
                 }
             }
             // stop making rows if we've run out of diass
-            if (dia > monthLength) {
+            if (dia > cantidadDeDiasDelMes) {
                 break;
             }
         }
         //Write the diass to the screen
+    };
+    NetstoreCalendarioComponent.prototype.obtenerCantidadDiasDelMes = function (Mes) {
+        var cantidadDeDiasDelMes = this.cal_dias_del_mes[Mes];
+        if (Mes == 1) {
+            if ((this.año % 4 == 0 && this.año % 100 != 0) || this.año % 400 == 0) {
+                cantidadDeDiasDelMes = 29;
+            }
+        }
+        return cantidadDeDiasDelMes;
     };
     NetstoreCalendarioComponent.prototype.dibujarCalendario = function () {
         //Generates the HTML and write HTML to screen
@@ -393,7 +399,7 @@ var NetstoreCalendarioComponent = (function () {
     };
     NetstoreCalendarioComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'netstore-calendario',template:/*ion-inline-start:"E:\Ionic\ControldeGastos1.1\src\components\netstore-calendario\netstore-calendario.html"*/'<!-- Generated template for the NetstoreCalendarioComponent component -->\n<div>\n  <!-- Add buttons to change the calendar month -->\n  <button class="calButton" (click)="Hoy()">\n    <span> Prev </span>\n  </button>\n  <button class="calButton" (click)="MesSiguiente()">\n    <span> Next </span>\n  </button>\n\n  <table class="calendar" >\n    <tr>\n      <th class="headerCalendrio" colspan="7"></th>\n    </tr>\n    <tr>\n      <td class="headerdays">Dom</td>\n      <td class="headerdays">Lun</td>\n      <td class="headerdays">Mar</td>\n      <td class="headerdays">Mie</td>\n      <td class="headerdays">Jue</td>\n      <td class="headerdays">Vie</td>\n      <td class="headerdays">Sab</td>\n    </tr>\n    <tbody class="days">\n        <tr *ngFor="let semanas of cal_ArrayDeDias" class="semana">\n            <td *ngFor="let dia of semanas" \n            (click)="seleccionoDia(dia)">{{dia?.FechaNumerica}}</td>\n          </tr>\n    </tbody>\n  </table>\n\n\n</div>\n'/*ion-inline-end:"E:\Ionic\ControldeGastos1.1\src\components\netstore-calendario\netstore-calendario.html"*/
+            selector: 'netstore-calendario',template:/*ion-inline-start:"C:\Users\nestor.castañeda\Downloads\ControldeGastos1.1\src\components\netstore-calendario\netstore-calendario.html"*/'<!-- Generated template for the NetstoreCalendarioComponent component -->\n<div>\n  <!-- Add buttons to change the calendar month -->\n  <button class="calButton" (click)="Hoy()">\n    <span> Prev </span>\n  </button>\n  <button class="calButton" (click)="MesSiguiente()">\n    <span> Next </span>\n  </button>\n\n  <table class="calendar" >\n    <tr>\n      <th class="headerCalendrio" colspan="7"></th>\n    </tr>\n    <tr>\n      <td class="headerdays">Dom</td>\n      <td class="headerdays">Lun</td>\n      <td class="headerdays">Mar</td>\n      <td class="headerdays">Mie</td>\n      <td class="headerdays">Jue</td>\n      <td class="headerdays">Vie</td>\n      <td class="headerdays">Sab</td>\n    </tr>\n    <tbody class="days">\n        <tr *ngFor="let semanas of cal_ArrayDeDias" class="semana">\n            <td *ngFor="let dia of semanas" \n            (click)="seleccionoDia(dia)">{{dia?.DiaCorto}}</td>\n          </tr>\n    </tbody>\n  </table>\n\n\n</div>\n'/*ion-inline-end:"C:\Users\nestor.castañeda\Downloads\ControldeGastos1.1\src\components\netstore-calendario\netstore-calendario.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], NetstoreCalendarioComponent);
@@ -410,11 +416,7 @@ var NetstoreCalendarioComponent = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DiaDto; });
 var DiaDto = (function () {
-    function DiaDto(DiaCorto, FechaCompleta, FechaCorta, FechaNumerica) {
-        this.DiaCorto = DiaCorto;
-        this.FechaCompleta = FechaCompleta;
-        this.FechaCorta = FechaCorta;
-        this.FechaNumerica = FechaNumerica;
+    function DiaDto() {
     }
     return DiaDto;
 }());
